@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src = "js/form.js"></script>
+    <link rel = "stylesheet" href = "css/form.css">
+</head>
+<body>
+    <div>
+        <form class = "form" name = "form" onsubmit = "validateForm()">
+            <legend>Create a New Event</legend>
+            <fieldset>
+                <div class = "set">
+                <label for = "eventType">Event Type:</label>
+                <select id = "eventTy" name = "event"> 
+                    <option value = "choose">Choose One</option>
+                    <option value = "birthday">Birthday</option>
+                    <option value = "wedding">Wedding</option>
+                    <option value = "reunion">Reunion</option>
+                    <option value = "party">Party</option>
+                </select> <br> <br>
+                <label for = "eventTitle" required>Event Title:</label>
+                <input  id = "eventTi" type = "text" name = "title">
+                <br> <br>
+                <label for = "eventDates" required>Event Dates:</label>
+                <input id = "sdate" type = date name = "start"> to <input id = "edate" type = date name = "end" required>
+                <br> <br>
+                <label for = "postingDate" required>Posting Date:</label>
+                <input id = "pdate" type = date name = "post">
+                <br> <br>
+                <input type = checkbox name = "check1">Is Registration Required?
+                <br> <br>
+                <input type = checkbox name = "check2">Is this event associated with any Family Programs?
+                <br> <br>
+                <input type = checkbox name = "check3">Upoin Registration Completion, Are Users to Recieve an Auto Generated Email?
+                <br> <br>
+                <input type = checkbox name = "check4">Is There a Point of Contact?
+                <br> <br>
+                <input type = checkbox name = "check5">Is There a Hosting Command Point of Contact?
+                <br> <br>
+                <input id = "submit" type = submit name = "submit" onclick = "validateForm()" value = "Save"> <input id = "cancel" type = button name = "cancel" onclick = "reset()" value = "Cancel">
+                <br> <br>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

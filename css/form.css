@@ -1,0 +1,57 @@
+body {
+    font-family: arial;
+}
+
+.form {
+    top: 50%;
+    left: 50%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+input[type = "submit"] {
+    height: 25px;
+    width: 70px;
+}
+
+input[type = "button"] {
+    height: 25px;
+    width: 70px;
+}
+
+#submit {
+    margin-left: 40%;
+}
+
+#cancel {
+    margin-left: 10px;
+}
+
+.set {
+    margin: 20px 40px 30px 40px;
+}
+
+#eventTy {
+    margin-left: 85px;
+}
+
+#eventTi {
+    margin-left: 90px;
+}
+
+input[type = "text"] {
+    width: 450px
+}
+
+#sdate {
+    margin-left: 78px;
+    margin-right: 10px;
+}
+
+#pdate {
+    margin-left: 74px;
+}
+
+#edate {
+    margin-left: 10px;
+}
